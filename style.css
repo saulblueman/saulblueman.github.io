@@ -1,0 +1,265 @@
+/* Basic Reset & Typography */
+:root {
+    --primary-color: #007bff; /* Синій акцентний */
+    --secondary-color: #f4f4f9; /* Світло-сірий фон для секцій */
+    --dark-color: #333; /* Основний колір тексту */
+    --light-color: #fff; /* Білий */
+    --gray-color: #666; /* Додатковий сірий текст */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Header */
+.header {
+    background: var(--light-color);
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header .header-phone {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto 30px;
+    color: var(--gray-color);
+}
+
+.cta-buttons a {
+    margin: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #e2e6ea;
+    color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+    background-color: #d3d9df;
+}
+
+
+/* Services Section */
+.price-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.price-list li span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.services .note {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--gray-color);
+}
+
+/* Why Me Section */
+.why-me {
+    background-color: var(--secondary-color);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.feature-item {
+    background: var(--light-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+}
+
+/* How It Works Section */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+.step {
+    flex: 1;
+}
+
+.step span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer h2 {
+    color: var(--light-color);
+}
+
+.footer a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .cta-buttons a {
+        margin-bottom: 10px;
+    }
+    .price-list li {
+       flex-direction: column;
+       align-items: center;
+       gap: 5px;
+       text-align: center;
+    }
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
