@@ -208,14 +208,6 @@ section {
     text-decoration: underline;
 }
 
-.contact-info {
-    margin-bottom: 30px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
 .copyright {
     font-size: 0.9rem;
     color: var(--gray-color);
@@ -263,49 +255,25 @@ section {
         gap: 10px;
     }
 }
-/* Styling for the new footer details section */
-.footer-details {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    margin-top: 30px;
-    gap: 20px;
-    flex-wrap: wrap; /* Дозволяє блокам переноситись на мобільних */
-}
 
-.schedule, .locations {
-    flex-basis: 250px; /* Мінімальна ширина кожного блоку */
-    flex-grow: 1;
-}
-
-.footer-details h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.footer-details p {
-    margin: 5px 0;
-}
-
-.footer-details .note {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-.locations ul {
-    list-style: none;
+/* Нові стилі для списку контактів у футері */
+.contact-list {
+    list-style: none; /* Прибирає стандартні маркери списку */
     padding: 0;
-    margin: 0;
+    margin: 30px auto; /* Центрує список і додає відступи */
+    max-width: 500px; /* Обмежує ширину для кращої читабельності */
+    text-align: left; /* Вирівнює текст по лівому краю */
 }
 
-.locations li {
-    padding: 2px 0;
+.contact-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px; /* Відстань між пунктами списку */
 }
 
-/* Додаємо іконку-пін перед кожним пунктом */
-.locations li::before {
-    content: '📍';
-    margin-right: 8px;
-    font-size: 0.9em;
+.contact-list li:last-child {
+    margin-bottom: 0; /* Прибирає нижній відступ в останнього елемента */
+}
+
+.contact-list strong {
+    color: var(--primary-color);
 }
