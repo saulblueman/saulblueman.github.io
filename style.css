@@ -262,11 +262,11 @@ section {
     padding: 0;
     margin: 30px auto; /* Центрує список і додає відступи */
     max-width: 500px; /* Обмежує ширину для кращої читабельності */
-    text-align: left; /* Вирівнює текст по лівому краю */
+    text-align: center; /* Вирівнює текст по лівому краю */
 }
 
 .contact-list li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 15px; /* Відстань між пунктами списку */
 }
 
