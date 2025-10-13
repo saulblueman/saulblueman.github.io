@@ -263,3 +263,49 @@ section {
         gap: 10px;
     }
 }
+/* Styling for the new footer details section */
+.footer-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap; /* Дозволяє блокам переноситись на мобільних */
+}
+
+.schedule, .locations {
+    flex-basis: 250px; /* Мінімальна ширина кожного блоку */
+    flex-grow: 1;
+}
+
+.footer-details h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-details p {
+    margin: 5px 0;
+}
+
+.footer-details .note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.locations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.locations li {
+    padding: 2px 0;
+}
+
+/* Додаємо іконку-пін перед кожним пунктом */
+.locations li::before {
+    content: '📍';
+    margin-right: 8px;
+    font-size: 0.9em;
+}
