@@ -9,6 +9,30 @@
     <meta name="keywords" content="ремонт комп'ютерів васильків, ремонт ноутбуків васильків, комп'ютерний майстер васильків, встановити віндовс васильків, почистити ноутбук, заміна термопасти, микола комп'ютерник">
 
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts (для гарних іконок у майбутньому або шрифтів) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Schema.org розмітка для Google (допомагає з SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ComputerRepair",
+      "name": "Комп'ютерний майстер Микола",
+      "telephone": "+380957644849",
+      "priceRange": "100-1000 UAH",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Васильків",
+        "addressCountry": "UA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.1764, 
+        "longitude": 30.3158 
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -33,23 +57,23 @@
             </div>
         </section>
 
-    <section id="services" class="services">
-    <div class="container">
-        <h2>Мої послуги та ціни</h2>
-        <ul class="price-list">
-            <li>Встановлення драйверів та програмного забезпечення <span>100–200 грн</span></li>
-            <li>Чистка ноутбука / ПК від пилу + заміна термопасти <span>300–450 грн</span></li>
-            <li>Заміна комплектуючих (HDD, SSD, RAM, відеокарта) <span>від 200 грн</span></li>
-            <li>Налаштування Wi-Fi / роутера / принтера <span>200 грн</span></li>
-            <li>Підбір комплектуючих для збірки або апгрейду <span>від 300 грн</span></li>
-            <li>Відновлення даних <span>400 грн</span></li>
-            <li>Діагностика <span>Безкоштовно</span></li>
-        </ul>
-        <p class="note">*Діагностика завжди безкоштовна, навіть якщо ви відмовитеся від ремонту.</p>
-    </div>
-</section>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Мої послуги та ціни</h2>
+                <ul class="price-list">
+                    <li>Встановлення драйверів та програмного забезпечення <span>від 100 грн</span></li>
+                    <li>Чистка ноутбука / ПК від пилу + заміна термопасти <span>від 400 грн</span></li>
+                    <li>Заміна комплектуючих (HDD, SSD, RAM, відеокарта) <span>від 200 грн</span></li>
+                    <li>Налаштування Wi-Fi / роутера / принтера <span>200 грн</span></li>
+                    <li>Підбір комплектуючих для збірки або апгрейду <span>від 300 грн</span></li>
+                    <li>Відновлення даних <span>400 грн</span></li>
+                    <li>Діагностика <span>Безкоштовно</span></li>
+                </ul>
+                <p class="note">*Діагностика завжди безкоштовна, навіть якщо ви відмовитеся від ремонту.</p>
+            </div>
+        </section>
 
-
+        <!-- Секція Чому я (ЗБЕРЕЖЕНА) -->
         <section id="why-me" class="why-me">
             <div class="container">
                 <h2>Чому вам варто звернутися до мене?</h2>
@@ -86,6 +110,47 @@
             </div>
         </section>
 
+        <!-- НОВА СЕКЦІЯ: Відгуки -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2>Що кажуть мої клієнти</h2>
+                <div class="review-grid">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="client-name">Аня Федоренко</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">"Доброго вечора, дякую за швидку роботу, гарний сервіс і приємне спілкування, молодий спеціаліст, який поясне що не так з вашим ПК.
+Запропонує якісне і швидке вирішення саме вашої проблеми.
+Дякую ща допомогу !"</p>
+                        <div class="review-date">15.12.2025</div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="client-name">Olya Didenko</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">"Єдиний майстер , який погодився допомогти терміново. Дякую за відповідальність та професіоналізм!"</p>
+                        <div class="review-date">20.12.2024</div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="client-name">Алексей Журавлев</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">"Супер. Все сделал как нужно, ничего лишнего. Цены радуют."</p>
+                        <div class="review-date">05.02.2025</div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="https://maps.app.goo.gl/xgwFh41N6NzUQLK18" target="_blank" class="btn btn-secondary">Читати більше відгуків на Google Maps</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -97,11 +162,17 @@
                     <li>📞 <strong>Телефон:</strong> <a href="tel:+380957644849">+38 095 764 48 49</a></li>
                     <li>💬 <strong>Telegram:</strong> <a href="https://t.me/pc_vasilkiv" target="_blank">@pc_vasilkiv</a></li>
                     <li>🕒 <strong>Графік роботи:</strong> Переважно по вечорах і у неділю.</li>
-                    <li>📍 <strong>Регіон:</strong> Працюю по Василькову та найближчих населених пунктах.</li>
+                    <!-- ОНОВЛЕНО: Додано посилання на карту -->
+                    <li>
+                        📍 <strong>Локація:</strong> 
+                        <a href="https://maps.app.goo.gl/xgwFh41N6NzUQLK18" target="_blank" class="map-link">м. Васильків (дивитись на карті)</a>
+                        <br>
+                        <span style="font-size: 0.9em; color: #ccc;">Працюю з виїздом додому або приймаю техніку у себе.</span>
+                    </li>
                 </ul>
             </div>
 
-            <p class="copyright">© 2025 Комп'ютерний майстер Микола. Всі права захищені.</p>
+            <p class="copyright">© 2026 Комп'ютерний майстер Микола. Всі права захищені;) </p>
         </div>
     </footer>
 
